@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_SNIFFER_CAMPAIGN](NM_SNIFFER_CAMPAIGN.md)
+
+---
+
 # NM Sniffer Campaign (serial + CAN)
 
 ## Zakres

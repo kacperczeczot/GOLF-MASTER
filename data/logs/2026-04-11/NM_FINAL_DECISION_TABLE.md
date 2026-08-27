@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_FINAL_DECISION_TABLE](NM_FINAL_DECISION_TABLE.md)
+
+---
+
 # NM Final Decision Table (evidence-driven)
 
 ## Założenia

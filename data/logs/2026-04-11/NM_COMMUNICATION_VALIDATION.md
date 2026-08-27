@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_COMMUNICATION_VALIDATION](NM_COMMUNICATION_VALIDATION.md)
+
+---
+
 # Walidacja komunikacji NM (PQ35 Infotainment) — checklista
 
 Kryteria odnoszą się do firmware w `hardware/hardware.ino` (obecnie **v10 final / v10 refactor-structural** — patrz tabela archiwum; **v04/v03/v02/v01** to archiwum w `logs/2026-04-11/`).

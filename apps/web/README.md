@@ -1,3 +1,7 @@
+[Strona główna](../../README.md) > [web](README.md)
+
+---
+
 # Dokumentacja Smart UI (Web) — GOLF MASTER
 
 ## 1. Rola modułu

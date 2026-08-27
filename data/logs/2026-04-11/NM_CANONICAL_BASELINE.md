@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_CANONICAL_BASELINE](NM_CANONICAL_BASELINE.md)
+
+---
+
 # NM Canonical Baseline
 
 ## Cel

@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_GATED_VALIDATION_BASELINE](NM_GATED_VALIDATION_BASELINE.md)
+
+---
+
 # NM Gated Validation Baseline (A->B->C)
 
 ## Cel

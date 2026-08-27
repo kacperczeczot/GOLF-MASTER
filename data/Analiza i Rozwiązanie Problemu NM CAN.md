@@ -1,3 +1,7 @@
+[Strona główna](../README.md) > [data](README.md) > [Analiza i Rozwiązanie Problemu NM CAN](Analiza i Rozwiązanie Problemu NM CAN.md)
+
+---
+
 # **Kompleksowa analiza i rozwiązanie problemu zarządzania siecią (NM) CAN w platformie VW PQ35**
 
 ## **1\. Wprowadzenie do topologii sieciowej i architektury platformy VW PQ35**

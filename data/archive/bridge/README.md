@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [bridge](README.md)
+
+---
+
 # Mostek Python (bridge) — GOLF MASTER [ARCHIWUM]
 
 > Ten moduł jest wycofany z aktywnego użycia. Aktualny tor danych działa przez BLE UART.

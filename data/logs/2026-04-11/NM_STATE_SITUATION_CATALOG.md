@@ -1,3 +1,7 @@
+[Strona główna](../../../README.md) > [2026-04-11](README.md) > [NM_STATE_SITUATION_CATALOG](NM_STATE_SITUATION_CATALOG.md)
+
+---
+
 # Katalog stanów i sytuacji NM/CAN (pełna analiza logów v01-v05)
 
 ## Cel dokumentu

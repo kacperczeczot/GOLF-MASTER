@@ -1,3 +1,7 @@
+[Strona główna](../README.md) > [docs](README.md) > [MESSAGES](MESSAGES.md)
+
+---
+
 # Komunikaty systemowe (SYS) i błędy (ERR)
 
 **Projekt:** GOLF MASTER (ESP32 BLE UART ↔ Web UI)  

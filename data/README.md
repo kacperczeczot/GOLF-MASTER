@@ -1,3 +1,7 @@
+[Strona główna](../README.md) > [data](README.md)
+
+---
+
 # Folder `data` (baza wiedzy) — GOLF MASTER
 
 ## 1. Rola w systemie

@@ -1,3 +1,7 @@
+[Strona główna](../../README.md) > [firmware](README.md)
+
+---
+
 # Firmware sprzętowy — VAG PQ35 Infotainment CAN — GOLF MASTER
 
 Warstwa hardware ma aktywny firmware ESP32, a starszy wariant Arduino został przeniesiony do archiwum:

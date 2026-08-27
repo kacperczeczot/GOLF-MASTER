@@ -1,3 +1,7 @@
+[Strona główna](../../README.md) > [archive](README.md)
+
+---
+
 # Archiwum (nieaktywne komponenty)
 
 Ten katalog zawiera elementy wyłączone z aktywnego rozwoju:

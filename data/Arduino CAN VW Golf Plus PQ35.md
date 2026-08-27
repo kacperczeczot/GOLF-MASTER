@@ -1,3 +1,7 @@
+[Strona główna](../README.md) > [data](README.md) > [Arduino CAN VW Golf Plus PQ35](Arduino CAN VW Golf Plus PQ35.md)
+
+---
+
 [ANALIZA GEMINI DEEP RESEARCH]
 
 # **Kompleksowa Analiza Inżynieryjna Magistrali CAN i Implementacja Protokołu OSEK NM w Architekturze Volkswagen PQ35 dla Systemów Telemetrii Opartej na Mikrokontrolerach Arduino**
