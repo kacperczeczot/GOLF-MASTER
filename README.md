@@ -1,7 +1,3 @@
-[Strona główna](README.md)
-
----
-
 # GOLF-MASTER — System Diagnostyki Pokładowej & Analityki Telemetrii
 
 > Monorepo systemu diagnostyczno-telemetrycznego dla pojazdu Volkswagen Golf Plus: firmware ESP32 CAN-bus + offline Web Dashboard analityki pojazdu.
