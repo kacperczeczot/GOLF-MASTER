@@ -6,7 +6,6 @@
 
 ## 1. Dokumentacja i Standardy Monorepo
 
-Projekt funkcjonuje w oparciu o oficjalny model **Monorepo** ([`template-monorepo`](https://github.com/kacperczeczot/template-monorepo)) i przestrzega standardów inżynieryjnych ekosystemu:
 
 | Dokument / Sekcja | Opis |
 | :--- | :--- |
@@ -14,7 +13,6 @@ Projekt funkcjonuje w oparciu o oficjalny model **Monorepo** ([`template-monorep
 | [Specyfikacja Komunikatów (`docs/MESSAGES.md`)](docs/MESSAGES.md) | Formaty ramek danych BLE, protokoły telemetrii |
 | [Baza Dokumentacji (`docs/README.md`)](docs/README.md) | Centralny hub dokumentacyjny projektu |
 | [Rejestr Decyzji ADR (`docs/adr/`)](docs/adr/README.md) | Rejestr Decyzji Architektonicznych |
-| [Globalne Standardy DevEx (`devex-standards`)](https://github.com/kacperczeczot/devex-standards) | Nadrzędna Konstytucja inżynieryjna ekosystemu |
 | [Reguły AI Projektu (`.agents/rules/project.md`)](.agents/rules/project.md) | Instrukcje domenowe dla asystentów AI |
 
 ---
