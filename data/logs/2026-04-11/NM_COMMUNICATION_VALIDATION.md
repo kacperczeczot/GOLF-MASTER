@@ -98,7 +98,7 @@ Brak takiego checkpointu oznacza, że iteracja nie jest gotowa do testów polowy
 
 - **Tryby Serial (bez rekompilacji):**
   - `MODE:KEEPALIVE` — zachowanie jak **v02** (odpowiedź `0x40B` bez bitów Sleep w bajcie 1; domyślne po starcie — linia `SYS:CAN:NM_MODE_KEEPALIVE`).
-  - `MODE:SLEEP_COOP` — w odpowiedzi NM **lustruje** bity **SleepInd** (`0x10`) i **SleepAck** (`0x20`) z ramki Gatewaya `0x42B` do bajtu 1 ramki `0x40B`, zgodnie z układem sygnałów **NWM_Radio** w [`data/id_ramek_tylko_radio.txt`](../../data/id_ramek_tylko_radio.txt) (startbity 12–13, jak w `mNM_Gateway_I`).
+  - `MODE:SLEEP_COOP` — w odpowiedzi NM **lustruje** bity **SleepInd** (`0x10`) i **SleepAck** (`0x20`) z ramki Gatewaya `0x42B` do bajtu 1 ramki `0x40B`, zgodnie z układem sygnałów **NWM_Radio** w [`data/id_ramek_tylko_radio.txt`](../../id_ramek_tylko_radio.txt) (startbity 12–13, jak w `mNM_Gateway_I`).
 - **Watchdog HANG:** w `SLEEP_COOP` krótkie wyciszenie fałszywego HANG w oknie **równym Grace po `WAKE_END`** (`hadWakeEndForGrace` + `!isSleepIndicated`), żeby nie karać przejścia tuż po zaniku wake.
 - **Status empiryczny (zapisane logi):** `v03_A_KA_cisza` / `v03_A_SC_cisza` — **`sleep-path` FAIL**; w wariancie zbliżonym do **v02** (`MODE:KEEPALIVE`) przyczyna jest ta sama klasa co w v02: **brak startu** procedury snu przy podtrzymaniu pierścienia, a **nie** „problem z `SleepInd` jako brakującą obsługą”. **`v03_B_KA_impulsy`** / **`v03_B_SC_impulsy`:** skrypt `no-hang`+`resilience` → OK — **bez** zmiany diagnozy z sekcji [Wnioski ostateczne](#wnioski-ostateczne-stan-na-2026-04-11): **rdzeniowo ten sam kompromis co v02** względem celu snu przy wpiętym węźle (szczegóły: `NM_STATE_SITUATION_CATALOG.md`).
 

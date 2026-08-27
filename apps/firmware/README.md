@@ -5,7 +5,7 @@ Warstwa hardware ma aktywny firmware ESP32, a starszy wariant Arduino został pr
 | Plik | Platforma | Status | Transport do UI |
 |------|-----------|--------|---------------------------|
 | [`esp32.ino`](esp32.ino) | ESP32 + TWAI | **Produkcja** — CAN/NM + przekaźniki + light sleep + OTA | BLE UART + WiFi OTA |
-| [`../archiwum/hardware/arduino.ino`](../archiwum/hardware/arduino.ino) | Arduino (MCP2515 + TJA1055) | **Archiwum** — stary firmware referencyjny | USB Serial (`230400` baud) |
+| [`../../data/archive/hardware/arduino.ino`](../../data/archive/hardware/arduino.ino) | Arduino (MCP2515 + TJA1055) | **Archiwum** — stary firmware referencyjny | USB Serial (`230400` baud) |
 
 **Zasada utrzymania:** aktywny rozwój dotyczy tylko `esp32.ino`; Arduino i dawny bridge są utrzymywane wyłącznie historycznie w `archiwum/`.
 
@@ -130,7 +130,7 @@ Niezależnie od platformy i kanału (USB / BT) firmware emituje ten sam język k
 - **System:** `SYS:HW:READY`, `SYS:FW:BUILD_ID`, `SYS:CAN:SLEEP_IND`, `SYS:CAN:IDLE_SHUTDOWN`, `SYS:HW:LIGHT_SLEEP_ENTER/WAKE`, `SYS:HW:TWAI:RECOVERING/RUNNING`, `SYS:RELAY_ILL:OFF_BY_CAN_IDLE`, `SYS:RELAYS:FORCED_OFF_BY_SILENCE`, `SYS:OTA:START/END`
 - **Błędy:** `ERR:HW:INIT_FAIL`, `ERR:CAN:HANG`, `ERR:HW:TJA`, `ERR:HW:TWAI:BUS_OFF:TEC=…`, `ERR:HW:TWAI:RECOVERY_*`, `ERR:OTA:0x…`
 
-Słownik w całym ekosystemie: [`MESSAGES.md`](../MESSAGES.md).
+Słownik w całym ekosystemie: [`MESSAGES.md`](../../docs/MESSAGES.md).
 
 ---
 
@@ -139,7 +139,7 @@ Słownik w całym ekosystemie: [`MESSAGES.md`](../MESSAGES.md).
 - Walidacja i reguły decyzyjne: `logs/2026-04-11/NM_COMMUNICATION_VALIDATION.md`
 - Katalog sytuacji i wzorców ramek: `logs/2026-04-11/NM_STATE_SITUATION_CATALOG.md`
 - Opis magistrali PQ35: `data/Arduino CAN VW Golf Plus PQ35.md`
-- Archiwalne komponenty: [`../archiwum/README.md`](../archiwum/README.md)
+- Archiwalne komponenty: [`../../data/archive/README.md`](../../data/archive/README.md)
 
 ### Uwaga historyczna
 
