@@ -2,7 +2,8 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-cd "$SCRIPT_DIR"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+cd "$ROOT_DIR"
 
 echo "========================================="
 echo "     GOLF MASTER - LOCAL OFFLINE START"
@@ -23,11 +24,11 @@ fi
 
 echo
 echo "[1/2] Budowanie offline bundle..."
-"$PYTHON_BIN" "web/bundle_tool.py" build
+"$PYTHON_BIN" "apps/web/bundle_tool.py" build
 
 echo "[2/2] Otwieranie UI (file://)"
 sleep 2
-open "web/index.html"
+open "apps/web/index.html"
 
 echo
 echo "Gotowe. UI uruchomione lokalnie."

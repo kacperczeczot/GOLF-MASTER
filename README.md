@@ -1,34 +1,50 @@
-# GOLF MASTER v50.0 — system zarządzania magistralą CAN
+[Strona główna](README.md)
 
-**GOLF MASTER** to ekosystem inżynieryjny do monitorowania magistrali **CAN-Infotainment** (VAG PQ35) z firmware na ESP32 i dashboardem webowym.
+---
 
-## Aktywna architektura
+# GOLF-MASTER — System Diagnostyki Pokładowej & Analityki Telemetrii
 
-1. **Hardware (`hardware/esp32.ino`)** — firmware ESP32 (TWAI 100 kbps, przekaźniki, Auto-NM, BLE UART, WiFi/OTA).
-2. **Smart UI (`web/`)** — dashboard live (Vanilla JS), parser ramek CAN i logów `SYS/ERR`, połączenie z terminalem BLE UART.
+> Monorepo systemu diagnostyczno-telemetrycznego dla pojazdu Volkswagen Golf Plus: firmware ESP32 CAN-bus + offline Web Dashboard analityki pojazdu.
 
-## Struktura projektu
+---
 
-- [hardware](hardware/README.md) — aktywny firmware ESP32 i konfiguracja warstwy sprzętowej.
-- [web](web/README.md) — frontend i transport BLE UART.
-- [data](data/README.md) — opisy sygnałów, mapy i materiały DBC.
-- [MESSAGES.md](MESSAGES.md) — słownik komunikatów SYS/ERR.
-- [archiwum](archiwum/README.md) — wycofane komponenty (bridge Python, Arduino, stary transport WS).
+## 1. Dokumentacja i Standardy Monorepo
 
-## Uruchamianie
+Projekt funkcjonuje w oparciu o oficjalny model **Monorepo** ([`template-monorepo`](https://github.com/kacperczeczot/template-monorepo)) i przestrzega standardów inżynieryjnych ekosystemu:
 
-1. Wgraj `hardware/esp32.ino` do modułu ESP32.
-2. Otwórz `web/index.html`.
-3. Kliknij `POŁĄCZ BT` i wybierz urządzenie BLE UART.
+| Dokument / Sekcja | Opis |
+| :--- | :--- |
+| [Standardy Projektu (`docs/STANDARDS.md`)](docs/STANDARDS.md) | Certyfikat zgodności Monorepo ze standardami DevEx |
+| [Specyfikacja Komunikatów (`docs/MESSAGES.md`)](docs/MESSAGES.md) | Formaty ramek danych BLE, protokoły telemetrii |
+| [Baza Dokumentacji (`docs/README.md`)](docs/README.md) | Centralny hub dokumentacyjny projektu |
+| [Rejestr Decyzji ADR (`docs/adr/`)](docs/adr/README.md) | Rejestr Decyzji Architektonicznych |
+| [Globalne Standardy DevEx (`devex-standards`)](https://github.com/kacperczeczot/devex-standards) | Nadrzędna Konstytucja inżynieryjna ekosystemu |
+| [Reguły AI Projektu (`.agents/rules/project.md`)](.agents/rules/project.md) | Instrukcje domenowe dla asystentów AI |
 
-## Frontend (skrót)
+---
 
-- `web/index.html` — punkt wejścia (`file://`), ładuje `script.bundle.js`.
-- `web/js/app/transport/btTerminal.js` — transport BLE UART i parser strumienia.
-- `web/bundle_tool.py` — `build` (generuje bundle), `check` (szybka walidacja spójności).
+## 2. Aplikacje Monorepo (`apps/`)
 
-Po zmianach w `web/js/**` przebuduj bundle:
+| Aplikacja | Ścieżka | Technologia | Opis |
+| :--- | :--- | :--- | :--- |
+| **Firmware ESP32** | [`apps/firmware/`](apps/firmware/) | C++ / Arduino | Oprogramowanie mikrokontrolera do odczytu magistrali CAN (OBD2) i transmisji BLE |
+| **Web Dashboard** | [`apps/web/`](apps/web/) | Vanilla HTML / CSS / JS | Offline'owy panel analityczny na żywo i przeglądarka logów telemetrii |
+
+---
+
+## 3. Zbiory Danych i Skrypty
+
+* 📁 [**`data/`**](data/) — Parametry pojazdu, specyfikacje PID oraz logi diagnostyczne (`data/logs/`, `data/archiwum/`).
+* 📁 [**`scripts/`**](scripts/) — Skrypty uruchomieniowe (`scripts/start.command`, `scripts/start.bat`) oraz aktualizacji OTA.
+
+---
+
+## 4. Szybki Start
 
 ```bash
-python3 web/bundle_tool.py build
+# Uruchomienie lokalnego panelu telemetrycznego
+./scripts/start.command
+
+# Weryfikacja spójności bundla webowego
+python3 apps/web/bundle_tool.py check
 ```

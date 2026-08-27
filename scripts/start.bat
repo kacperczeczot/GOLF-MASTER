@@ -35,16 +35,16 @@ if "%PYTHON_BIN%"=="" (
 
 echo.
 echo [1/2] Budowanie offline bundle...
-%PYTHON_BIN% "%~dp0web\bundle_tool.py" build
+%PYTHON_BIN% "%~dp0..\apps\web\bundle_tool.py" build
 if errorlevel 1 (
-    echo Blad: nie udalo sie zbudowac web/script.bundle.js
+    echo Blad: nie udalo sie zbudowac apps/web/script.bundle.js
     pause
     exit /b 1
 )
 
 echo [2/2] Otwieranie UI (file://)
 timeout /t 2 /nobreak > NUL
-start "" "%~dp0web\index.html"
+start "" "%~dp0..\apps\web\index.html"
 
 echo.
 echo Gotowe. UI uruchomione lokalnie.
