@@ -9,5 +9,5 @@
 - [ ] Walidacja tagów sygnałów: `python3 apps/web/check_signal_meta_state_tags.py`
 
 ## Zgodność ze Standardami DevEx
-- [ ] Zmiany przestrzegają zasad czystości Monorepo (`devex-standards`)
+- [ ] Zmiany są zgodne z wytycznymi w `.agents/rules/project.md`
 - [ ] Zastosowano konwencję Conventional Commits
