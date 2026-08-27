@@ -34,7 +34,7 @@ Projekt funkcjonuje w oparciu o oficjalny model **Monorepo** ([`template-monorep
 
 ## 3. Zbiory Danych i Skrypty
 
-* 📁 [**`data/`**](data/) — Parametry pojazdu, specyfikacje PID oraz logi diagnostyczne (`data/logs/`, `data/archiwum/`).
+* 📁 [**`data/`**](data/) — Parametry pojazdu, specyfikacje PID oraz logi diagnostyczne (`data/logs/`).
 * 📁 [**`scripts/`**](scripts/) — Skrypty uruchomieniowe (`scripts/start.command`, `scripts/start.bat`) oraz aktualizacji OTA.
 
 ---
